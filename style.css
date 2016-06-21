@@ -1,0 +1,160 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #eef1ec;
+}
+header{
+	background-color: #ccc;
+}
+.logo{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.logo a{
+	text-decoration: none;
+}
+.logo_desc{
+	margin-top: 28px;
+}
+.logo_desc a{
+	display: block;
+	margin-left: 5px;
+	font-size: 24px;
+	color: slategrey;
+}
+.nav{
+	margin-top: 25px;
+}
+.nav>li>a{
+	padding: 10px 30px;
+	color: #333;
+	text-transform: uppercase;
+}
+main{
+	min-height: 900px;
+}
+.info{
+	border-right: 1px solid #333;
+	margin-bottom: 30px;
+}
+address a, address a:hover{
+	color: #333;
+}
+.location, .cell, .mail{
+	position: relative;
+	padding-left: 40px;
+}
+.location{
+	margin-top: 10px;
+}
+.location::before{
+	content: url('images/marker.png');
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.cell::before{
+	content: url('images/phone.png');
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+.mail{
+	padding-top: 5px;
+}
+.mail::before{
+	content: url('images/mail.png');
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+.slide_desc::after{
+	position: absolute;
+	top: 0px;
+	left: 45px;
+	font-size: 70px;
+	color: #fff;
+}
+.first_slide::after{
+	content: 'Легковые и грузовые шины';
+}
+.second_slide::after{
+	content: 'Масла, технические жидкости и аккумуляторы';
+	color: #ccc;
+}
+.third_slide::after{
+	content: 'Запчасти к автомобилям производства СНГ';
+	color: #fff;
+}
+.footer_nav .nav>li>a{
+	padding: 10px 10px;
+}
+.footer_nav .nav>li:nth-child(4n)>a{
+	margin-right: 30px;
+	margin-left: 25px;
+}
+.footer_nav .nav>li>a:hover{
+	background-color: #ccc;
+}
+.footer_nav{
+	border-right: 1px solid #333;
+}
+.footer_nav .nav{
+	margin-top: 40px;
+	margin-bottom: 55px;
+	margin-left: 50px;
+}
+blockquote{
+	border-left: none;
+	margin: 35px 0px 20px;
+}
+hr{
+	background-color: #333;
+}
+.banner img{
+	margin-top: 20px;
+	width: 100%;
+}
+.tires{
+	background-color: #fff;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+.tires h4{
+	color: #ccc;
+}
+.partners{
+	padding-left: 0px;
+}
