@@ -1,6 +1,7 @@
 $(function() {
 	$(".rslides").responsiveSlides({
 		auto: true,
-		pause: true
+		pause: true,
+		timeout: 3000
 	});
 });

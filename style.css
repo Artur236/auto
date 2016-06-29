@@ -3,7 +3,7 @@ body{
 	padding: 0px;
 	background-color: #eef1ec;
 }
-header{
+header, footer{
 	background-color: #ccc;
 }
 .logo{
@@ -31,7 +31,7 @@ header{
 	text-transform: uppercase;
 }
 main{
-	min-height: 900px;
+	min-height: 500px;
 }
 .info{
 	border-right: 1px solid #333;
@@ -126,7 +126,7 @@ address a, address a:hover{
 	margin-left: 25px;
 }
 .footer_nav .nav>li>a:hover{
-	background-color: #ccc;
+	background-color: #fff;
 }
 .footer_nav{
 	border-right: 1px solid #333;
@@ -147,14 +147,66 @@ hr{
 	margin-top: 20px;
 	width: 100%;
 }
-.tires{
+.tires, .oils{
 	background-color: #fff;
 	margin-bottom: 50px;
 	margin-top: 20px;
 }
-.tires h4{
+.tires h4, .oils h4{
 	color: #ccc;
 }
 .partners{
 	padding-left: 0px;
+}
+.price{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+}
+.price_file{
+	display: inline-block;
+	margin-bottom: 30px;
+	padding: 10px 10px;
+	color: #333;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	background-color: #ccc;
+}
+.price_file:hover{
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+}
+.autoparts{
+	padding-left: 0px;
+	font-size: 16px;
+}
+.companies{
+	margin-right: 15px;
+}
+.companies img{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-top: 0px;
+}
+footer{
+	margin-top: 20px;
+}
+footer .container{
+	padding-top: 30px;
+}
+.tires_cover, .oils_cover, .parts_cover{
+	margin-top: 20px;
+	background-color: #fff;
+}
+.cover{
+	width: 100%;
+	padding: 15px 0px;
+}
+#map{
+	margin-top: 20px;
+	width: 100%;
+	height: 400px;
 }
