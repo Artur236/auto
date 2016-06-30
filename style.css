@@ -276,6 +276,9 @@ footer .container{
 		font-size: 20px;
 		left: 10px;
 	}
+	.companies{
+		display: none;
+	}
 }
 @media only screen and (max-width : 1024px){
 	.logo a>span{
