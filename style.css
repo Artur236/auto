@@ -74,7 +74,7 @@ address a, address a:hover{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .rslides li {
@@ -127,23 +127,8 @@ address a, address a:hover{
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
-.slide_desc::after{
-	position: absolute;
-	top: 0px;
-	left: 45px;
-	font-size: 70px;
-	color: #fff;
-}
-.first_slide::after{
-	content: 'Легковые и грузовые шины';
-}
-.second_slide::after{
-	content: 'Масла, технические жидкости и аккумуляторы';
-	color: #ccc;
-}
-.third_slide::after{
-	content: 'Запчасти к автомобилям производства СНГ';
-	color: #fff;
+.slide{
+	position: relative;
 }
 .footer_nav .nav>li>a{
 	padding: 10px 10px;
@@ -300,6 +285,42 @@ footer .container{
 	color: #fff;
 	border-radius: 20px;
 }
+.centered-btns_nav.next {
+	left: auto;
+	background-position: right top;
+	right: 15px;
+}
+.centered-btns_nav {
+	z-index: 3;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 50%;
+	left: 15px;
+	opacity: 0.7;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 61px;
+	width: 38px;
+	background: transparent url("themes.gif") no-repeat left top;
+	margin-top: -45px;
+}
+.caption {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	font-size: 24px;
+	text-shadow: none;
+	color: #fff;
+	background: #000;
+	background: rgba(0,0,0, .8);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 20px;
+	margin: 0;
+	max-width: none;
+}
 @media only screen and (max-width : 640px){
 	.nav>li:first-child{
 		display: none;
@@ -325,13 +346,36 @@ footer .container{
 		display: none;
 	}
 	.first_news a{
-	position: absolute;
-	bottom: 0;
-	right: 10px;
-	padding: 5px;
-	color: #fff;
-	text-decoration: none;
-}
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		padding: 5px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.centered-btns_nav.next {
+		left: auto;
+		background-position: right top;
+		right: 15px;
+	}
+	.centered-btns_nav {
+		z-index: 3;
+		position: absolute;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		top: 60%;
+		left: 15px;
+		opacity: 0.7;
+		text-indent: -9999px;
+		overflow: hidden;
+		text-decoration: none;
+		height: 61px;
+		width: 38px;
+		background: transparent url("themes.gif") no-repeat left top;
+		margin-top: -45px;
+	}
+	.caption{
+		font-size: 11px;
+	}
 }
 @media only screen and (max-width : 768px){
 	.nav>li>a{
