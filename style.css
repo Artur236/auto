@@ -111,10 +111,10 @@ address a, address a:hover{
 }
 .rslides_tabs li{
 	float: left;
-	padding: 10px 15px;
 }
 .rslides_tabs li>a{
 	color: #333;
+	padding: 3px 15px;
 }
 .rslides_tabs li:hover{
 	background-color: #fff;
@@ -237,6 +237,69 @@ footer .container{
 	width: 100%;
 	height: 400px;
 }
+.services{
+	margin-top: 20px;
+	background-color: #fff;
+}
+.services img{
+	margin-top: 20px;
+	width: 100%;
+}
+.services ul>li{
+	font-size: 16px;
+	padding: 10px 0px;
+	color: #333;
+	list-style: none;
+	position: relative;
+}
+.services ul>li::before{
+	background-image: url('images/point.png');
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	content: "";
+}
+.first_news{
+	margin-top: 20px;
+}
+.first_news img, .second_news img, .third_news img{
+	width: 100%;
+	position: relative;
+}
+.first_news a{
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	padding: 15px 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+.first_news a:hover{
+	background-color: #ccc;
+	color: #333;
+	border-radius: 20px;
+	text-decoration: none;
+}
+.second_news, .third_news{
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #fff;
+}
+.second_news a, .third_news a{
+	color: #333;
+	text-decoration: underline;
+	padding: 10px;
+	display: inline-block;
+}
+.second_news a:hover, .third_news a:hover{
+	background-color: #ccc;
+	color: #fff;
+	border-radius: 20px;
+}
 @media only screen and (max-width : 640px){
 	.nav>li:first-child{
 		display: none;
@@ -261,6 +324,14 @@ footer .container{
 	.companies{
 		display: none;
 	}
+	.first_news a{
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+}
 }
 @media only screen and (max-width : 768px){
 	.nav>li>a{

@@ -3,6 +3,7 @@ $(function() {
 		auto: true,
 		pause: true,
 		timeout: 3000,
-		pager: true
+		pager: true,
+		speed: 500
 	});
 });
