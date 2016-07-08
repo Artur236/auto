@@ -1,9 +1,12 @@
+// SLIDER 
 $(function() {
+	// SLIDER 
 	$(".rslides").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "centered-btns"
-      });
+		auto: false,
+		pager: false,
+		nav: true,
+		speed: 500,
+		namespace: "centered-btns"
+	});
+	// SLIDER 
 });

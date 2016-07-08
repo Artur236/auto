@@ -6,6 +6,7 @@ body{
 header, footer{
 	background-color: #ccc;
 }
+/* HEADER STYLES */
 .logo{
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -26,47 +27,28 @@ header, footer{
 	color: #333;
 	text-transform: uppercase;
 }
+/* HEADER STYLES */
+
+/* MAIN SECTION STYLES */
 main{
 	min-height: 500px;
-}
-.info{
-	border-right: 1px solid #333;
-	margin-bottom: 30px;
-}
-address a, address a:hover{
-	color: #333;
-}
-.location, .cell, .mail{
-	position: relative;
-	padding-left: 40px;
-}
-.location{
-	margin-top: 10px;
-}
-.location::before{
-	content: url('images/marker.png');
-	position: absolute;
-	top: 15px;
-	left: 0;
-}
-.cell::before{
-	content: url('images/phone.png');
-	position: absolute;
-	top: -5px;
-	left: 0;
-}
-.mail{
-	padding-top: 5px;
-}
-.mail::before{
-	content: url('images/mail.png');
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 .slider{
 	text-align: center;
 }
+.about h1, .about h3{
+	font-weight: bold;
+	text-align: left;
+}
+.about h3{
+	color: grey;
+}
+.about h3>span{
+	font-weight: bold;
+	color: #333;
+}
+
+/* SLIDER STYLES */
 .rslides {
 	position: relative;
 	list-style: none;
@@ -97,6 +79,7 @@ address a, address a:hover{
 	height: auto;
 	float: left;
 	width: 100%;
+	height: 641.5px;
 	border: 0;
 }
 .rslides_tabs{
@@ -130,6 +113,46 @@ address a, address a:hover{
 .slide{
 	position: relative;
 }
+.caption {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	font-size: 24px;
+	text-shadow: none;
+	color: #fff;
+	background: #000;
+	background: rgba(0,0,0, .8);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 20px;
+	margin: 0;
+	max-width: none;
+}
+.centered-btns_nav.next {
+	left: auto;
+	background-position: right top;
+	right: 15px;
+}
+.centered-btns_nav {
+	z-index: 3;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 50%;
+	left: 15px;
+	opacity: 0.7;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 61px;
+	width: 38px;
+	background: transparent url("../images/themes.gif") no-repeat left top;
+	margin-top: -45px;
+}
+/* SLIDER STYLES */
+/* MAIN SECTION STYLES */
+
+/* FOOTER STYLES */
 .footer_nav .nav>li>a{
 	padding: 10px 10px;
 }
@@ -148,6 +171,47 @@ address a, address a:hover{
 	margin-bottom: 55px;
 	margin-left: 50px;
 }
+footer{
+	margin-top: 20px;
+}
+footer .container{
+	padding-top: 30px;
+}
+.info{
+	border-right: 1px solid #333;
+	margin-bottom: 30px;
+}
+address a, address a:hover{
+	color: #333;
+}
+.location, .cell, .mail{
+	position: relative;
+	padding-left: 40px;
+}
+.location{
+	margin-top: 10px;
+}
+.location::before{
+	content: url('../images/marker.png');
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+.cell::before{
+	content: url('../images/phone.png');
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+.mail{
+	padding-top: 5px;
+}
+.mail::before{
+	content: url('../images/mail.png');
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 blockquote{
 	border-left: none;
 	margin: 35px 0px 20px;
@@ -155,6 +219,8 @@ blockquote{
 hr{
 	background-color: #333;
 }
+/* FOOTER STYLES */
+
 .banner img{
 	margin-top: 20px;
 	width: 100%;
@@ -170,6 +236,8 @@ hr{
 .partners{
 	padding-left: 0px;
 }
+
+/* PRICE STYLES */
 .price{
 	display: inline-block;
 	font-size: 18px;
@@ -190,6 +258,8 @@ hr{
 	background-color: #fff;
 	text-decoration: none;
 }
+/* PRICE STYLES */
+
 .autoparts{
 	padding-left: 0px;
 	font-size: 16px;
@@ -203,12 +273,6 @@ hr{
 	height: 100px;
 	margin-top: 0px;
 }
-footer{
-	margin-top: 20px;
-}
-footer .container{
-	padding-top: 30px;
-}
 .tires_cover, .oils_cover, .parts_cover{
 	margin-top: 20px;
 	background-color: #fff;
@@ -217,11 +281,16 @@ footer .container{
 	width: 100%;
 	padding: 15px 0px;
 }
+
+/* MAP STYLES */
 #map{
 	margin-top: 20px;
 	width: 100%;
 	height: 400px;
 }
+/* MAP STYLES */
+
+/* SERVICES STYLES */
 .services{
 	margin-top: 20px;
 	background-color: #fff;
@@ -238,7 +307,7 @@ footer .container{
 	position: relative;
 }
 .services ul>li::before{
-	background-image: url('images/point.png');
+	background-image: url('../images/point.png');
 	background-size: 15px 15px;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -246,6 +315,9 @@ footer .container{
 	height: 14px;
 	content: "";
 }
+/* SERVICES STYLES */
+
+/* NEWS STYLES */
 .first_news{
 	margin-top: 20px;
 }
@@ -285,42 +357,9 @@ footer .container{
 	color: #fff;
 	border-radius: 20px;
 }
-.centered-btns_nav.next {
-	left: auto;
-	background-position: right top;
-	right: 15px;
-}
-.centered-btns_nav {
-	z-index: 3;
-	position: absolute;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	top: 50%;
-	left: 15px;
-	opacity: 0.7;
-	text-indent: -9999px;
-	overflow: hidden;
-	text-decoration: none;
-	height: 61px;
-	width: 38px;
-	background: transparent url("themes.gif") no-repeat left top;
-	margin-top: -45px;
-}
-.caption {
-	display: block;
-	position: absolute;
-	z-index: 2;
-	font-size: 24px;
-	text-shadow: none;
-	color: #fff;
-	background: #000;
-	background: rgba(0,0,0, .8);
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 10px 20px;
-	margin: 0;
-	max-width: none;
-}
+/* NEWS STYLES */
+
+/* MEDIA QUERIES */
 @media only screen and (max-width : 640px){
 	.nav>li:first-child{
 		display: none;
@@ -370,11 +409,14 @@ footer .container{
 		text-decoration: none;
 		height: 61px;
 		width: 38px;
-		background: transparent url("themes.gif") no-repeat left top;
+		background: transparent url("../images/themes.gif") no-repeat left top;
 		margin-top: -45px;
 	}
 	.caption{
 		font-size: 11px;
+	}
+	.rslides img{
+		height: auto;
 	}
 }
 @media only screen and (max-width : 768px){
@@ -393,6 +435,9 @@ footer .container{
 	}
 	.companies{
 		display: none;
+	}
+	.rslides img{
+		height: auto;
 	}
 }
 @media only screen and (max-width : 1024px){
@@ -413,3 +458,4 @@ footer .container{
 		margin-left: -4px;
 	}
 }
+/* MEDIA QUERIES */

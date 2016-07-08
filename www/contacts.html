@@ -8,29 +8,36 @@
 	<meta http-equiv="content-language" content="ru">
 	<meta name="robots" content="all">
 	<meta name="author" content="Arthur Poliakov">
-    <meta name="copyright" content="All rights owned by Arthur Poliakov">
+	<meta name="copyright" content="All rights owned by Arthur Poliakov">
 	<title>Агропартнер - Контакты</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico" />
+	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="js/jquery-1.8.3.min.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
-	<script src="js/script.js"></script>
+	<!-- BOOTSTRAP -->
+	<!-- STYLES -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- STYLES -->
+	<!-- JS -->
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/responsiveslides.min.js"></script>
+	<script src="../js/script.js"></script>
+	<!-- JS -->
 </head>
 <body>
+	<!-- HEADER -->
 	<header>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 logo">
-					<a href="index.html">
-						<img src="images/logo.png" alt="logo">
+					<a href="../index.html">
+						<img src="../images/logo.png" alt="logo">
 						<span alt="автозапчастини автозапчасти купить">Агропартнер</span>
 					</a>
 				</div>
 				<div class="col-md-offset-2 col-md-7">
 					<ul class="nav nav-pills">
-						<li role="presentation"><a href="index.html">Главная</a></li>
+						<li role="presentation"><a href="../index.html">Главная</a></li>
 						<li role="presentation"><a href="news.html">Новости</a></li>
 						<li role="presentation"><a href="services.html">Услуги</a></li>
 						<li role="presentation"><a href="gds.html">Товары</a></li>
@@ -40,16 +47,20 @@
 			</div>
 		</div>
 	</header>
+	<!-- HEADER -->
+
+	<!-- MAIN SECTION -->
 	<main>
 		<div class="container">
 			<div class="row">
+				<!-- GOOGLE MAPS -->
 				<div class="col-md-12">
 					<div id="map"></div>
 				</div>
-
+				<!-- GOOGLE MAPS SCRIPT -->
 				<script>
 					function initMap() {
-						var myLatLng = {lat: 49.242735, lng: 28.525240};
+						var myLatLng = {lat: 49.242735, lng: 28.525240};//location
 
 						var map = new google.maps.Map(document.getElementById('map'), {
 							zoom: 15,
@@ -60,15 +71,20 @@
 							position: myLatLng,
 							map: map,
 							title: 'г.Винница ул. Ватутина, 17'
-						});
+						});//location's marker
 					}
 				</script>
+				<!-- GOOGLE MAPS SCRIPT -->
 				<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
 				async defer></script>
 			</div>
+			<!-- GOOGLE MAPS -->
 		</div>
 	</div>
 </main>
+<!-- MAIN SECTION -->
+
+<!-- FOOTER -->
 <footer>
 	<div class="container">
 		<div class="row">
@@ -93,7 +109,7 @@
 			</div>
 			<div class="col-md-4 footer_nav">
 				<ul class="nav nav-pills">
-					<li role="presentation"><a href="index.html">Главная</a></li>
+					<li role="presentation"><a href="../index.html">Главная</a></li>
 					<li role="presentation"><a href="news.html">Новости</a></li>
 					<li role="presentation"><a href="services.html">Услуги</a></li>
 					<li role="presentation"><a href="gds.html">Товары</a></li>
@@ -108,5 +124,6 @@
 		</div>
 	</div>
 </footer>
+<!-- FOOTER -->
 </body>
 </html>
